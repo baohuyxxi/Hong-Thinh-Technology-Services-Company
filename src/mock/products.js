@@ -1,0 +1,150 @@
+const products = [
+  {
+    id: 1,
+    name: "PHẦN MỀM QUẢN LÝ BÁN HÀNG POS365",
+    image:
+      "https://yphatnhatrang.com/wp-content/uploads/2022/08/12345-768x768.jpg",
+    bestSeller: false,
+  },
+  { id: 2, name: "Tingbox", image: "https://tingbox.vn/tingbox-assets/img/tingbox02.png", bestSeller: false },
+  {
+    id: 3,
+    name: "MÁY POSAPP D3 FHD",
+    image: "https://chukinhdoanh.com/wp-content/uploads/2022/10/posapp-pal-n-1536x1024.jpg",
+    bestSeller: true,
+  },
+  {
+    id: 4,
+    name: "Máy D2A POS Terminal (1 màn hình)",
+    image: "https://posapp.vn/wp-content/uploads/2019/05/posapp-t2.png",
+    bestSeller: false,
+  },
+  {
+    id: 5,
+    name: "Máy D2A POS Terminal (2 màn hình)",
+    image: "https://tse3.mm.bing.net/th/id/OIP.13KRxkaD57V9bDDyHmx89gAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    bestSeller: false,
+  },
+  {
+    id: 6,
+    name: "MÁY POS PAC2S",
+    image: "https://posapp.vn/wp-content/uploads/2020/01/may-tinh-tien-posapp-pac2-1-1-1024x1024.jpg",
+    bestSeller: false,
+  },
+  {
+    id: 7,
+    name: "MÁY IN BILL POSAPP USB +LAN",
+    image: "https://thietbi.posapp.vn/wp-content/uploads/2024/04/may-in-hoa-don-posapp-usb-wifi-1.jpg",
+    bestSeller: false,
+  },
+  {
+    id: 8,
+    name: "Máy in nhiệt 888BT AYIN in đơn hàng, in tem, mã vận đơn, mã vạch, phiếu gửi hàng",
+    image: "https://socdo.vn/uploads/hinh-anh/z57134450111151f497d1a4738005bbd2b16a5535cc808-compressed-1723174688.jpg",
+    bestSeller: false,
+  },
+  {
+    id: 9,
+    name: "Máy in mã vạch HPRT HT330",
+    image: "https://cdn.vinhnguyen.vn/images/detailed/14/02-hprt-ht330-1.jpg?v=1",
+    bestSeller: false,
+  },
+  {
+    id: 10,
+    name: "Máy in mã vạch Xprinter XP-TT426B",
+    image: "/https://www.sieuthivienthong.com/imgs/art/p_74713_Xprinter-XP-TT426B.jpg",
+    bestSeller: false,
+  },
+  {
+    id: 11,
+    name: "Máy in mã vạch GODEX G500U",
+    image: "https://www.pos365.vn/storage/app/uploads/public/66a/852/c78/thumb_473_700_500_0_0_portrait.png",
+    bestSeller: false,
+  },
+  {
+    id: 12,
+    name: "NGĂN KÉO ĐỰNG TIỀN PA (4 NGĂN)",
+    image: "https://tse4.mm.bing.net/th/id/OIP.wlxQfdI2Mb4BXEmGUaluZAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    bestSeller: false,
+  },
+  {
+    id: 13,
+    name: "BỘ RUNG 16 THẺ",
+    image: "https://hanoicomputercdn.com/media/product/69871_bo_the_rung_goi_mon_16_the.jpg",
+    bestSeller: false,
+  },
+  {
+    id: 14,
+    name: "MÁY QUÉT MÃ VẠCH ĐƠN TIA PA – QW2120",
+    image: "https://tse3.mm.bing.net/th/id/OIP._TR3nLIwTDNOwANzSx358gHaIA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    bestSeller: false,
+  },
+  {
+    id: 15,
+    name: "MÁY QUÉT MÃ VẠCH ĐƠN TIA DATAMAX PA – C1200",
+    image: "/path-to-image15.png",
+    bestSeller: false,
+  },
+  {
+    id: 16,
+    name: "MÁY QUÉT ĐA TIA PA",
+    image: "/path-to-image16.png",
+    bestSeller: false,
+  },
+  {
+    id: 17,
+    name: "GIẤY IN TEM 50X30 PA",
+    image: "/path-to-image17.png",
+    bestSeller: false,
+  },
+  {
+    id: 18,
+    name: "GIẤY IN NHIỆT K57X45",
+    image: "/path-to-image18.png",
+    bestSeller: false,
+  },
+  {
+    id: 19,
+    name: "GIẤY IN NHIỆT K80X45",
+    image: "/path-to-image19.png",
+    bestSeller: false,
+  },
+  {
+    id: 20,
+    name: "GIẤY IN NHIỆT K80X80",
+    image: "/path-to-image20.png",
+    bestSeller: false,
+  },
+  {
+    id: 21,
+    name: "Viettel CA (khai báo thuế) + CKS HSM",
+    image: "/path-to-image21.png",
+    bestSeller: false,
+  },
+  {
+    id: 22,
+    name: "HDDT Sinvoice Viettel",
+    image: "/path-to-image22.png",
+    bestSeller: false,
+  },
+  {
+    id: 23,
+    name: "Phần mềm Kế Toán",
+    image: "/path-to-image23.png",
+    bestSeller: false,
+  },
+  {
+    id: 24,
+    name: "Phần mềm quản lý bán hàng",
+    image: "/path-to-image24.png",
+    bestSeller: false,
+  },
+  {
+    id: 25,
+    name: "Phần mềm vBHXH",
+    image: "/path-to-image25.png",
+    bestSeller: false,
+  },
+];
+
+export default products;

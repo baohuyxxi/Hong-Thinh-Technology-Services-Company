@@ -24,9 +24,7 @@ export default function Navbar() {
     <header className="navbar-default">
       <div className="navbar-default__container">
         <div className="navbar-logo">
-          <Link to="/">
-            <img src={logo} alt="Logo" />
-          </Link>
+          <img src={logo} alt="Logo" />
         </div>
         <nav className="navbar-menu">
           {menuItems.map((item) => (
@@ -38,12 +36,12 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <div className="navbar-search">
-            <SearchIcon />
-          </div>
         </nav>
+        <div className="navbar-search">
+          <SearchIcon />
+        </div>
 
-        <div className="navbar-right">
+        {/* <div className="navbar-right">
           <div className="navbar-social">
             <div className="navbar-social__item">
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
@@ -52,7 +50,7 @@ export default function Navbar() {
             </div>
             <div className="navbar-social__item">
       
-              <a href="mailto:dailythuetaynama@gmail.com">
+              <a href="mailto:pitshongthinh@gmail.com">
                 <EmailIcon />
               </a>
             </div>
@@ -70,7 +68,7 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </header>
   );

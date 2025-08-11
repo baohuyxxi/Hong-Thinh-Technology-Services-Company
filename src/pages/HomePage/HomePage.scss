@@ -1,5 +1,5 @@
 .home-banner {
-  background: linear-gradient(135deg, #ED1B2F, #FF5733, #FFC300);
+  background: linear-gradient(135deg, var(--primary), #FF5733, #FFC300);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -83,13 +83,13 @@
 
       .service-icon {
         font-size: 3.5rem;
-        color: #ED1B2F;
+        color:  var(--primary);
         margin-bottom: 15px;
       }
       h3 {
         font-size: 1.3rem;
         margin-bottom: 10px;
-        color: #ED1B2F;
+        color:  var(--primary);
       }
       p {
         font-size: 1rem;
@@ -133,7 +133,7 @@
 }
 
 .home-stats {
-  background: #ED1B2F;
+  background:  var(--primary);
   color: white;
   padding: 40px 15px;
   border-radius: 10px;
