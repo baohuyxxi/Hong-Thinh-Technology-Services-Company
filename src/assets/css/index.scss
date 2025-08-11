@@ -1,0 +1,135 @@
+html[mode="light"] {
+}
+
+html[mode="dark"] {
+}
+
+:root {
+  font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  --primary: #ED1B2F!important;
+  --primary-hover: #D11313;
+
+  --background: #fff;
+  --background-hover: #f5f5f5;
+  --green: #17a74a;
+
+  --input-border: #9a9a9a;
+  .flex {
+    display: flex;
+  }
+  .slide-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+      display: flex;
+      align-items: center;
+
+      &__item {
+        display: flex;
+        padding: 0 5px;
+        place-content: center;
+        border-bottom: 3px solid transparent; // Đặt border ban đầu trong suốt
+        &:hover {
+          border-bottom: 3px solid var(--primary); // Thay đổi màu border khi hover
+        }
+      }
+    }
+    &__drawer {
+      display: none;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      &__item {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:hover {
+          background-color: var(--background-hover);
+          border-radius: 5px;
+        }
+        svg {
+          color: var(--primary);
+          &:hover {
+            color: var(--primary-hover);
+          }
+        }
+      }
+    }
+  }
+
+  a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+  .radio {
+    margin: 0.5rem;
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      + .radio-label {
+        &:before {
+          content: "";
+          background: #f4f4f4;
+          border-radius: 100%;
+          border: 1px solid darken(#f4f4f4, 25%);
+          display: inline-block;
+          width: 1.4em;
+          height: 1.4em;
+          position: relative;
+          top: -0.2em;
+          margin-right: 1em;
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          transition: all 250ms ease;
+        }
+      }
+      &:checked {
+        + .radio-label {
+          &:before {
+            background-color: #3197ee;
+            box-shadow: inset 0 0 0 4px #f4f4f4;
+          }
+        }
+      }
+      &:focus {
+        + .radio-label {
+          &:before {
+            outline: none;
+            border-color: #3197ee;
+          }
+        }
+      }
+      &:disabled {
+        + .radio-label {
+          &:before {
+            box-shadow: inset 0 0 0 4px #f4f4f4;
+            border-color: darken(#f4f4f4, 25%);
+            background: darken(#f4f4f4, 25%);
+          }
+        }
+      }
+      + .radio-label {
+        &:empty {
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

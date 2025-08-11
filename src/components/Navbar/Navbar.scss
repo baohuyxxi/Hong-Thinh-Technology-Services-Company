@@ -1,0 +1,124 @@
+@use "../../assets/css/responsive.scss";
+.navbar-default {
+  background: var(--background);
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px;
+  width: -webkit-fill-available;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; // Cho phép xuống hàng
+    gap: 20px;
+  }
+
+  .navbar-logo img {
+    height: 70px;
+    scale: 150%;
+    width: auto;
+    object-fit: contain;
+
+    @include responsive.mobile-small {
+      height: 45px;
+    }
+
+    @include responsive.mobile-medium {
+      height: 50px;
+    }
+
+    @include responsive.mobile-large {
+      height: 55px;
+    }
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    a {
+      padding: 8px 10px;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s ease;
+
+      &:hover {
+        border-bottom-color: var(--primary);
+      }
+
+      &.active {
+        border-bottom-color: var(--primary);
+      }
+    }
+
+    @include responsive.mobile-medium {
+      flex: 1 1 100%; // Chiếm full hàng
+      justify-content: center;
+    }
+
+    @include responsive.mobile-small {
+      flex: 1 1 100%;
+      justify-content: center;
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .navbar-social {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--primary-light, #f5f5f5);
+        transition: background-color 0.3s ease;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--primary, #333);
+          font-size: 18px;
+        }
+
+        &:hover {
+          background-color: var(--primary);
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    @include responsive.mobile-medium {
+      flex: 1 1 100%;
+      justify-content: center;
+
+      .navbar-social {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    @include responsive.mobile-small {
+      flex: 1 1 100%;
+      justify-content: center;
+
+      .navbar-social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+    }
+  }
+}

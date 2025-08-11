@@ -1,0 +1,74 @@
+.banner {
+  padding: 20px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    &__right {
+      width: 100%;
+      max-width: 500px;
+
+      .slick-slide {
+        outline: none; // bỏ viền khi focus
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          object-fit: cover;
+          max-height: 300px;
+          user-select: none;
+          pointer-events: none;
+        }
+      }
+
+      .slick-dots {
+        bottom: 10px;
+
+        li {
+          margin: 0 5px;
+        }
+
+        button {
+          &:before {
+            font-size: 12px;
+            color: #999;
+          }
+        }
+
+        .slick-active button:before {
+          color: var(--primary-color, #007bff);
+        }
+      }
+
+      .slick-arrow {
+        &::before {
+          font-size: 24px;
+          color: var(--primary-color, #007bff);
+        }
+      }
+    }
+  }
+
+  .banner__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .banner__breadcrumbs {
+    font-size: 0.9rem;
+
+    a {
+      text-decoration: none;
+      color: #555;
+
+      &:hover {
+        color: var(--primary-color, #007bff);
+      }
+    }
+  }
+}

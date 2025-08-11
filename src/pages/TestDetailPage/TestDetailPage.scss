@@ -1,0 +1,24 @@
+.test-detail-page {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+
+  .test-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .test-description,
+  .test-time,
+  .test-start-time,
+  .test-end-time {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+ 
+  
+  
+}

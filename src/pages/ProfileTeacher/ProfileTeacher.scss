@@ -1,0 +1,58 @@
+.profile-teacher {
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+  }
+
+  &__details {
+    flex: 1;
+  }
+
+  &__name {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  &__introduction {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  &__contact {
+    font-size: 1em;
+    color: #444;
+
+    & > p {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__email,
+  &__phone,
+  &__address {
+    font-size: 1em;
+    color: #555;
+  }
+}

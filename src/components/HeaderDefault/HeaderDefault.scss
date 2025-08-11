@@ -1,0 +1,39 @@
+@use "../../assets//css/responsive.scss";
+
+.header-default {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 16px;
+  font-size: 14px;
+
+  width: 100%;
+
+  .header-default__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  .slide-menu__left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      svg {
+        font-size: 18px;
+        color: #ed1b2f;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}

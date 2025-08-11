@@ -1,0 +1,38 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    button,
+    svg {
+      border: none;
+      border-radius: 5px;
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 1rem;
+      margin: 0 5px;
+      padding: 10px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: var(--primary-hover);
+      }
+
+      &.active {
+        background-color: var(--primary);
+        color: white;
+        font-weight: bold;
+      }
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
