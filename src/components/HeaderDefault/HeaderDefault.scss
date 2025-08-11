@@ -1,11 +1,21 @@
 @use "../../assets//css/responsive.scss";
 
 .header-default {
+  @media screen {
+    @include responsive.mobile-small {
+      display: none;
+    }
+    @include responsive.mobile-medium {
+      display: none;
+    }
+    @include responsive.mobile-large {
+      display: none;
+    }
+  }
   background-color: #f8f8f8;
   border-bottom: 1px solid #e0e0e0;
   padding: 8px 16px;
-  font-size: 14px;
-
+  font-size: small;
   width: 100%;
 
   .header-default__container {
@@ -28,7 +38,7 @@
 
       svg {
         font-size: 18px;
-        color: #ed1b2f;
+        color: var(--primary);
       }
 
       span {

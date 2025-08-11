@@ -15,7 +15,7 @@ export default function HeaderDefault() {
             <PlaceIcon /> <span>Địa chỉ</span>
           </div>
           <div className="contact-item">
-            <EmailIcon /> <span>@gmail.com</span>
+            <EmailIcon /> <span>pitshongthinh@gmail.com</span>
           </div>
           <div className="contact-item">
             <AccessTimeIcon /> <span>08:00 - 17:00</span>

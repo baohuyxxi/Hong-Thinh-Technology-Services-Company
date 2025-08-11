@@ -7,13 +7,12 @@ import Banner from "../Banner/Banner";
 import Messenger from "../Messenger/Messenger";
 import Phone from "../Phone/Phone";
 
-export default function FramePage({ children, imageBanner }) {
-
+export default function FramePage({ children }) {
   return (
     <div className="frame-page">
       <HeaderDefault />
       <Navbar />
-      {/* <Banner image={imageBanner} /> */}
+      {/* <Banner /> */}
       <main className="frame-page__main">
         {children}
         <Messenger />

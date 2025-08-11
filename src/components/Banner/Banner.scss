@@ -1,74 +1,73 @@
 .banner {
   padding: 20px 0;
+  background-color: #f9f9f9;
 
   &__content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: flex-end;
 
-    &__right {
-      width: 100%;
-      max-width: 500px;
+    .col {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 
-      .slick-slide {
-        outline: none; // bỏ viền khi focus
+  &__content__right {
+    width: 100%;
+    max-width: 500px;
 
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          object-fit: cover;
-          max-height: 300px;
-          user-select: none;
-          pointer-events: none;
+    .banner__content__right__item {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        user-select: none;
+        pointer-events: none;
+      }
+    }
+
+    // Dots style
+    .slick-dots {
+      bottom: 10px;
+
+      li {
+        margin: 0 5px;
+      }
+
+      button {
+        &:before {
+          font-size: 12px;
+          color: #bbb;
+          opacity: 1;
         }
       }
 
-      .slick-dots {
-        bottom: 10px;
+      .slick-active button:before {
+        color: #007bff; // màu chủ đạo bạn có thể thay đổi
+      }
+    }
 
-        li {
-          margin: 0 5px;
-        }
-
-        button {
-          &:before {
-            font-size: 12px;
-            color: #999;
-          }
-        }
-
-        .slick-active button:before {
-          color: var(--primary-color, #007bff);
-        }
+    // Mũi tên điều hướng
+    .slick-arrow {
+      &::before {
+        font-size: 24px;
+        color: #007bff;
       }
 
-      .slick-arrow {
-        &::before {
-          font-size: 24px;
-          color: var(--primary-color, #007bff);
-        }
+      &:hover {
+        color: #0056b3;
       }
     }
   }
 
-  .banner__title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
+  @media screen and (max-width: 768px) {
+    &__content {
+      justify-content: center;
+    }
 
-  .banner__breadcrumbs {
-    font-size: 0.9rem;
-
-    a {
-      text-decoration: none;
-      color: #555;
-
-      &:hover {
-        color: var(--primary-color, #007bff);
-      }
+    &__content__right {
+      max-width: 100%;
     }
   }
 }
