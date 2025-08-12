@@ -15,7 +15,6 @@ const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
 const Introduce = lazy(() => import("../pages/Introduce/Introduce"));
 const Products = lazy(() => import("../pages/Products/Products"));
 const Services = lazy(() => import("../pages/Services/Services"));
-const Contact = lazy(() => import("../pages/Contact/Contact"));
 
 const Auth = () => {
   return (
@@ -49,14 +48,6 @@ const Auth = () => {
         element={
           <Suspense fallback={<div></div>}>
             <Services />
-          </Suspense>
-        }
-      />
-      <Route
-        path="/lien-he"
-        element={
-          <Suspense fallback={<div></div>}>
-            <Contact />
           </Suspense>
         }
       />

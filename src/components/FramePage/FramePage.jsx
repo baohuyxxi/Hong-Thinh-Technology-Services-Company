@@ -6,7 +6,6 @@ import Footer from "../Footer/Footer";
 import Banner from "../Banner/Banner";
 import Messenger from "../Messenger/Messenger";
 import Phone from "../Phone/Phone";
-import ChatZalo from "../ChatZalo/ChatZalo";
 
 export default function FramePage({ children }) {
   return (
@@ -17,7 +16,6 @@ export default function FramePage({ children }) {
       <main className="frame-page__main">
         {children}
         <Messenger />
-        <ChatZalo />
         <Phone />
       </main>
 

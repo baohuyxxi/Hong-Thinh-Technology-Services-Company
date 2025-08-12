@@ -1,0 +1,84 @@
+// src/components/ClassDetails/ClassDetails.scss
+
+.class-details {
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .chapter {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .teacher-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
+
+    .lesson {
+      margin-top: 15px;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background-color: #f5f5f5;
+
+      h3 {
+        font-size: 1.2rem;
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .video-links {
+        margin-top: 10px;
+
+        iframe {
+          width: 100%;
+          height: 315px;
+          border: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

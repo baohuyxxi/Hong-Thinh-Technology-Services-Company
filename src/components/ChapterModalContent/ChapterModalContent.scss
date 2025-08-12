@@ -1,0 +1,56 @@
+.edit-book__modal {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+    width: 80vw;
+  
+    .MuiTypography-h6 {
+      margin-bottom: 10px;
+    }
+  
+    .MuiAccordion-root {
+      margin-top: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  
+      &.Mui-expanded {
+        margin: 0;
+      }
+  
+      .MuiAccordionSummary-root {
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ccc;
+  
+        .MuiTypography-root {
+          flex-grow: 1;
+        }
+      }
+  
+      .MuiAccordionDetails-root {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+  
+        .MuiTextField-root {
+          margin-bottom: 15px;
+        }
+  
+        iframe {
+          margin-top: 10px;
+        }
+  
+        input[type="file"] {
+          margin-top: 10px;
+        }
+  
+        .edit-book__modal-button {
+          margin-top: 10px;
+          float: right;
+        }
+      }
+    }
+  }
+  

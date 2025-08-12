@@ -1,7 +1,7 @@
 .phone {
     position: fixed;
     right: 30px;
-    bottom: 20px;
+    bottom: 80px;
     z-index: 2000;
     background-color: #21dd78;
     border-radius: 50%;
@@ -15,7 +15,7 @@
     padding: 0 10px;
     color: #fff!important;
     &:hover {
-    background-color: #0b723b;
+      background-color: #188ae1;
       width: max-content;
       border-radius: 25px;
       color: #fff;
