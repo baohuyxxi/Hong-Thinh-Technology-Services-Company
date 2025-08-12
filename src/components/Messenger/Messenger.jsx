@@ -12,7 +12,7 @@ export default function Messenger() {
       onMouseLeave={() => setHover(false)}
       onClick={() => window.open(import.meta.env.VITE_LINK_MESSENGER)}
     >
-      {hover && <div className="messenger__tooltip">Liên hệ Messenger</div>}
+      {/* {hover && <div className="messenger__tooltip">Liên hệ Messenger</div>} */}
       <img src={messenger} className="messenger__icon" alt="Messenger Icon" />
     </div>
   );

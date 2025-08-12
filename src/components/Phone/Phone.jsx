@@ -12,7 +12,7 @@ export default function Phone() {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {hover && <div className="phone__tooltip">0346 353 913</div>}
+      {/* {hover && <div className="phone__tooltip">0346 353 913</div>} */}
       <img src={phone} className="phone__icon" alt="Phone Icon" />
     </a>
   );
