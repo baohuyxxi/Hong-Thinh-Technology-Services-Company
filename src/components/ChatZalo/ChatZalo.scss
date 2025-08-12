@@ -1,7 +1,7 @@
-.messenger {
+.chatzalo {
   position: fixed;
   right: 30px;
-  bottom: 140px;
+  bottom: 80px;
   z-index: 2000;
   background-color: #128be0;
   border-radius: 50%;
@@ -20,15 +20,15 @@
     color: #fff;
   }
 
-  .messenger__icon {
+  .chatzalo__icon {
     height: 30px;
     width: 30px;
   }
 
-  .messenger__tooltip {
+  .chatzalo__tooltip {
   }
 
-  &:hover .messenger__tooltip {
+  &:hover .chatzalo__tooltip {
     opacity: 1;
     transform: translateY(0);
   }
