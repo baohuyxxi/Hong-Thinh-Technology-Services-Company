@@ -1,10 +1,5 @@
 import "./Banner.scss";
 import React from "react";
-import HomeIcon from "@mui/icons-material/Home";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import pathLabels from "~/models/pathLabels ";
-import { useLocation, Link } from "react-router-dom";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
